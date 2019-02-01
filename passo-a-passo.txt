@@ -1,29 +1,67 @@
-1º Todos com projeto criado - ok
+1º Criar projeto com qualquer nome
+
 2º Criar componente "meu-primeiro" - 30s
+
 3º Criar componente "meu-primeiro2" - 30s
+
 4º Criar chamada html dos componentes "meu-primeiro"/"meu-primeiro2" dentro do "app" - 1m
-5º Criar componente "curso" - 30s
-6º Criar chamada html do componente "curso" dentro do "meu-primeiro2" - 1m
-7º Criar modulo "curso" - 1m
-8º Criar service "curso" - 1m
+
+5º Criar modulo "Curso" - 1m
+    - Passando o parâmetro "--module=app", ele inclui automaticamente o módulo no módulo principal
+
+6º Criar componente "Curso" - 30s
+    - Passando o parâmetro "--module=curso", ele inclui automaticamente o componente no módulo de cursos
+
+7º Criar chamada html do componente "curso" dentro do html componente "meu-primeiro2" - 1m
+
+8º Criar service "Curso" - 1m
+
 9º Criar providers no modulo de Cursos chamando o serviço de Cursos - 30s
 
-10º Criar função getCursos(), com retorno de um array (vetor) de três itens 
-    de nome de cursos dentro dos serviços de cursos - 2m
+10º Criar função getCursos(), com retorno de um array (vetor) de três itens de nome de cursos dentro dos serviços de cursos - 2m
 
-11º Usar os dados do serviço Curso no componente de Cursos, utilizando injeção de dependência - 1m
+11º Usar os dados do serviço "Curso" no componente "Curso", utilizando Injeção de Dependência (DI) - 1m
 
-12º Fazer export do componente de Curso no modulo de curso - 30s
-12.1 Efetuar a declaração do component Cursos
+12º Fazer export do componente de "Curso" no modulo de "Curso" - 30s
 
-13º Importar o módulo de "cursos" no módulo app. - 30s
+13º Efetuar a declaração do component "Curso" no módulo de "Curso"
+    - Se no passo 6 foi feito com o parâmetro, esse item pode ser ignorado
+
+13º Importar o módulo "Curso" no módulo root App. - 30s
+    - Se no passo 5 foi feito com o parâmetro, esse item pode ser ignorado
 
 14º Criar um loop mostrando os dados no html de cursos, utilizando o *ngFor dentro da tag LI - 1m
 
 
+=====================================================================================================================
 
-Total: 11 minutos
-
-Senha Wifi> func@ecm#2018
 Dicas: 
 ng s --o <==> ng serve --open
+
+
+
+Dicas de plugins:
+
+    -- O plugin no VSCode "Angular Component Extension". Ele varre os componentes e facilita a inserção dos componentes nos arquivos .html
+        https://marketplace.visualstudio.com/items?itemName=onixie.angular-component-extension
+        PS: Esse plugin necessita ser reiniciado toda vez que é criado um componente
+
+    -- O plugin no VSCode "Angular Follow Selector", onde esse é o inverso do anterior, ele monta um link no arquivo .html, e clicando vai direto para o componente
+        https://marketplace.visualstudio.com/items?itemName=sanderledegen.angular-follow-selector
+
+    -- O plugin no VSCode "Move TS". Ao mover o arquivo via opção, ele altera todos os arquivos automaticamente com o caminho relativo ao novo caminho.
+        https://marketplace.visualstudio.com/items?itemName=stringham.move-ts
+
+    -- O plugin trasforma um comando de criação de tabela SQL em uma interface TypeScript
+        https://marketplace.visualstudio.com/items?itemName=bluehymn.ddl-to-ts
+
+
+
+Para criar o projeto mais rapidamente e sem perguntas no Angular-CLI 7:
+
+	ng new [NOME_DO_PROJETO] --skip-tests --routing=false --verbose=false --style=scss
+  
+	=> Não cria arquivos de testes
+	=> Não cria rotas
+	=> Com menos log de tela
+	=> Definido o modo de estilo como .scss
