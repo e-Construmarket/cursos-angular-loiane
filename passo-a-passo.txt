@@ -1,0 +1,29 @@
+1º Todos com projeto criado - ok
+2º Criar componente "meu-primeiro" - 30s
+3º Criar componente "meu-primeiro2" - 30s
+4º Criar chamada html dos componentes "meu-primeiro"/"meu-primeiro2" dentro do "app" - 1m
+5º Criar componente "curso" - 30s
+6º Criar chamada html do componente "curso" dentro do "meu-primeiro2" - 1m
+7º Criar modulo "curso" - 1m
+8º Criar service "curso" - 1m
+9º Criar providers no modulo de Cursos chamando o serviço de Cursos - 30s
+
+10º Criar função getCursos(), com retorno de um array (vetor) de três itens 
+    de nome de cursos dentro dos serviços de cursos - 2m
+
+11º Usar os dados do serviço Curso no componente de Cursos, utilizando injeção de dependência - 1m
+
+12º Fazer export do componente de Curso no modulo de curso - 30s
+12.1 Efetuar a declaração do component Cursos
+
+13º Importar o módulo de "cursos" no módulo app. - 30s
+
+14º Criar um loop mostrando os dados no html de cursos, utilizando o *ngFor dentro da tag LI - 1m
+
+
+
+Total: 11 minutos
+
+Senha Wifi> func@ecm#2018
+Dicas: 
+ng s --o <==> ng serve --open
