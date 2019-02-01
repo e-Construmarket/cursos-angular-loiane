@@ -15,8 +15,10 @@
 7º Criar chamada html do componente "curso" dentro do html componente "meu-primeiro2" - 1m
 
 8º Criar service "Curso" - 1m
+    - Se estiver usando a versão do angular-cli 5 ou inferior, passe o parâmetro "--module=curso" que ele incluirá automaticamente o serviço no módulo de cursos
 
 9º Criar providers no modulo de Cursos chamando o serviço de Cursos - 30s
+    - Se no passo 8 foi feito com parâmetro, esse item pode ser ignorado
 
 10º Criar função getCursos(), com retorno de um array (vetor) de três itens de nome de cursos dentro dos serviços de cursos - 2m
 
